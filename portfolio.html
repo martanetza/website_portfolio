@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+<header class="wrapper-header">
+<div class="header-area1">
+<a href="index.html">Marta Netza</a>
+    
+</div>    
+<div class="header-area2">
+<a href="portfolio.html">Portfolio</a>    
+<a href="about.html">About</a>
+
+</div>
+</header>
+<main class="wrapper-main">
+    
+<div id=preload_image1>
+    </div>
+<div id=preload_image2>
+    </div>
+<div id=preload_image3>
+    </div>
+<div id=preload_image4>
+    </div>
+<div id=preload_image5>
+    </div>
+<div id=preload_image6>
+    </div>
+<div id=preload_image7>
+    </div>
+<div id=preload_image8>
+    </div>
+<div id=preload_image9>
+    </div>
+
+<div id=box1 class="main-area1">
+    <div class="text_box1">
+    <p>Basic web</p>    
+    <a href="box1.html">BAUHAUS STYLE</a>
+        
+<p> Core areas:<br>
+    <span>&#9632;</span> Communiction <span>&#9632;</span> Visualisation <br>
+    <span>&#9632;</span> Interaction design
+        </p>
+        
+    </div>
+    
+    </div>   
+<div id=box2 class="main-area2">
+        <div class="text_box2">
+    <p>Basic redesign</p>    
+    <a href="box2.html">EXMOUTH VIEW HOTEL</a>
+        
+<p> Core areas:<br>
+    <span>&#9632;</span> Interaction design
+        </p>
+        
+    </div>
+    
+    </div>    
+<div id=box3 class="main-area3">
+        <div class="text_box3">
+    <p>Basic conten</p>    
+    <a href="box3.html">TELL A STORY WITHOUT WORDS</a>
+        
+<p> Core areas:<br>
+    <span>&#9632;</span> Communiction <span>&#9632;</span> Visualisation <br>
+        </p>
+        
+    </div>
+    
+    
+    
+    </div>    
+<div id=box4 class="main-area4">
+        <div class="text_box4">
+    <p>Basic animation</p>    
+      <a href="box4.html">SIMPLE ANIMATIONS</a>
+        
+<p> Core areas:<br>
+    <span>&#9632;</span> Interaction design
+        </p>
+        
+    </div>
+    
+    
+    
+    
+    </div>    
+<div id=box5 class="main-area5">
+        <div class="text_box5">
+    <p>Basic web</p>    
+     <a href="box5.html">TOUR DE TRUMP</a>
+        
+<p> Core areas:<br>
+    <span>&#9632;</span> Interaction design
+        </p>
+        
+    </div>
+    
+    </div>    
+<div id=box6 class="main-area6">
+        <div class="text_box6">
+    <p>Basic web</p>    
+     <a href="box6.html">WE BIKE</a>
+        
+<p> Core areas:<br>
+    <span>&#9632;</span> Communiction <span>&#9632;</span> Visualisation
+        
+    </div>
+    
+    
+    
+    
+    </div>    
+<div id=box7 class="main-area7">
+        <div class="text_box7">
+    <p>Basic animation</p>    
+     <a href="box7.html">SPRING SOUP</a>
+        
+<p> Core areas:<br>
+    <span>&#9632;</span> Communiction <span>&#9632;</span> Visualisation <br>
+    <span>&#9632;</span> Interaction design
+        </p>
+        
+    </div>
+    
+    
+    
+    
+    
+    </div>    
+<div id=box8 class="main-area8">
+        <div class="text_box8">
+    <p>Basic animation</p>    
+    <a href="box8.html">POOL DAY</a>
+        
+<p> Core areas:<br>
+    <span>&#9632;</span> Interaction design
+        </p>
+        
+    </div>
+    
+    
+    
+    
+    
+    </div>    
+<div id=box9 class="main-area9">
+        <div class="text_box9">
+    <p>Basic web</p>    
+    <a href="box9.html">LOOP-IN APP</a>
+        
+<p> Core areas:<br>
+    <span>&#9632;</span> Communiction <span>&#9632;</span> Visualisation <br>
+    <span>&#9632;</span> Interaction design 
+    <span>&#9632;</span> Business
+    
+        </p>
+        
+    </div>
+    
+    
+    
+    
+    
+    </div>    
+
+</main>
+<script>
+    var box1 = document.querySelector("#box1 ");
+    var box2 = document.querySelector("#box2 ");
+    var box3 = document.querySelector("#box3 ");
+    var box4 = document.querySelector("#box4 ");
+    var box5 = document.querySelector("#box5 ");
+    var box6 = document.querySelector("#box6 ");
+    var box7 = document.querySelector("#box7 ");
+    var box8 = document.querySelector("#box8 ");
+    var box9 = document.querySelector("#box9 ");
+    
+    box1.addEventListener("mouseover", blured1 )
+    
+    function blured1() {
+//        document.querySelector("#box1 ").style.backgroundImage = "url(Images/26310small_blured.jpg)"
+
+        document.querySelector(".text_box1").style.display= "block"
+        }
+    
+     box1.addEventListener("mouseout", blured1off)
+    
+    function blured1off() {
+
+//        document.querySelector("#box1").style.backgroundImage = "url(Images/26310small.jpg)"
+         document.querySelector(".text_box1").style.display= "none"
+
+        }
+    
+    box2.addEventListener("mouseover", blured2 )
+    
+    function blured2() {
+//        document.querySelector("#box2 ").style.backgroundImage = "url(Images/Exmouth-View-Hotel_1066x742small_blured.jpg)"
+        document.querySelector(".text_box2").style.display= "block"
+        }
+    
+     box2.addEventListener("mouseout", blured2off)
+    
+    function blured2off() {
+//        document.querySelector("#box2").style.backgroundImage = "url(Images/Exmouth-View-Hotel_1066x742small.jpg)"
+         document.querySelector(".text_box2").style.display= "none"
+
+        }
+    
+box3.addEventListener("mouseover", blured3 )
+    
+    function blured3() {
+//        document.querySelector("#box3 ").style.backgroundImage = "url(Images/waiting-room_small_blured.png)"
+        document.querySelector(".text_box3").style.display= "block"
+//        }
+    }
+     box3.addEventListener("mouseout", blured3off)
+    
+    function blured3off() {
+//        document.querySelector("#box3").style.backgroundImage = "url(Images/waiting-room_small.png)"
+         document.querySelector(".text_box3").style.display= "none"
+
+        }    
+    
+box4.addEventListener("mouseover", blured4 )
+    
+    function blured4() {
+//        document.querySelector("#box4 ").style.backgroundImage = "url(Images/bauhaus_logo_ludzik_popr-z_tlemsmall_blured.png)"
+        document.querySelector(".text_box4").style.display= "block"
+//        }
+    }
+box4.addEventListener("mouseout", blured4off)
+    
+    function blured4off() {
+//        document.querySelector("#box4").style.backgroundImage = "url(Images/bauhaus_logo_ludzik_popr-z_tlemsmall.png)"
+         document.querySelector(".text_box4").style.display= "none"
+
+        }    
+    
+box5.addEventListener("mouseover", blured5)
+    
+    function blured5() {
+//        document.querySelector("#box5 ").style.backgroundImage = "url(Images/trump_small_blured.png)"
+        document.querySelector(".text_box5").style.display= "block"
+//        }
+    }
+box5.addEventListener("mouseout", blured5off)
+    
+    function blured5off() {
+//        document.querySelector("#box5").style.backgroundImage = "url(Images/trump_small.png)"
+         document.querySelector(".text_box5").style.display= "none"
+
+        }    
+    
+box6.addEventListener("mouseover", blured6)
+    
+    function blured6() {
+//        document.querySelector("#box6 ").style.backgroundImage = "url(Images/We-bike_small_blured.png)"
+        document.querySelector(".text_box6").style.display= "block"
+//        }
+    }
+box6.addEventListener("mouseout", blured6off)
+    
+    function blured6off() {
+//        document.querySelector("#box6").style.backgroundImage = "url(Images/We-bike_small.png)"
+         document.querySelector(".text_box6").style.display= "none"
+
+        }      
+box7.addEventListener("mouseover", blured7)
+    
+    function blured7() {
+//        document.querySelector("#box7 ").style.backgroundImage = "url(Images/animation%20background%20plus0_small_blured.jpg)"
+        document.querySelector(".text_box7").style.display= "block"
+//        }
+    }
+box7.addEventListener("mouseout", blured7off)
+    
+    function blured7off() {
+//        document.querySelector("#box7").style.backgroundImage = "url(Images/animation%20background%20plus0_small.jpg)"
+         document.querySelector(".text_box7").style.display= "none"
+
+        }   
+box8.addEventListener("mouseover", blured8)
+    
+    function blured8() {
+//        document.querySelector("#box8 ").style.backgroundImage = "url(Images/burger_small_blured.png)"
+        document.querySelector(".text_box8").style.display= "block"
+//        }
+    }
+box8.addEventListener("mouseout", blured8off)
+    
+    function blured8off() {
+//        document.querySelector("#box8").style.backgroundImage = "url(Images/burger_small.png)"
+         document.querySelector(".text_box8").style.display= "none"
+
+        }  
+
+box9.addEventListener("mouseover", blured9)
+    
+    function blured9() {
+//        document.querySelector("#box9 ").style.backgroundImage = "url(Images/Young-people-using-smartphones-and-tablets_small_blured.jpg)"
+        document.querySelector(".text_box9").style.display= "block"
+//        }
+    }
+box9.addEventListener("mouseout", blured9off)
+    
+    function blured9off() {
+//        document.querySelector("#box9").style.backgroundImage = "url(Images/Young-people-using-smartphones-and-tablets_small.jpg)"
+         document.querySelector(".text_box9").style.display= "none"
+
+        }
+
+</script>    
+<footer>
+© Marta Netza Design 2018
+</footer>    
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+

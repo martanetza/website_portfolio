@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+<header class="wrapper-header">
+<div class="header-area1">
+<a href="index.html">Marta Netza</a>
+    
+</div>    
+<div class="header-area2">
+<a href="portfolio.html">Portfolio</a>    
+<a href="about.html">About</a>
+
+</div>
+</header>
+<div class="box7">    
+<main class="wrapper-box">
+<div class="box-area1">
+<h1>Spring soup</h1>    
+<p>Spring soup is my individual project. It is a short animation that tells a story about 10-year-old Emma and her grandmother. Apart from the story I created an animated sprite.  
+</p>    
+</div>
+<div class="box-area2">
+<img src="Images/animation%20background%20plus0_small.jpg" alt="spring_soup">
+<p>Theme:</p>
+<h2>BASIC ANIMATION</h2>
+<a href="http://www.martanetza.com/kea/04-storytelling/spring-soup/index.html" >see the sprite  &#x279C; </a><br>
+<a href="http://www.martanetza.com/kea/04-storytelling/spring-soup/my-animation_marta-netza.pdf" >see the project document  &#x279C; </a>
+</div>
+    <div id=button1 class="box-area3">Communication</div>
+    <div id=button2 class="box-area4">Visualisation</div>
+    <div id=button3 class="box-area5">Interaction design</div>
+    <div id=button4 class="box-area6"></div> 
+<div class="button1content">
+<p>While working on the project I have learned a lot about storytelling. My goal was to create a simple story that can be educative. The protagonist in this case is Emma. She is the one that the viewers should identify with. Emma is a difficult child. She is rebellious, stubborn and doesn't want to listen to her grandmother. But the series of events show that her acting is wrong and pointless. She finally loses her fight. But her failure can be something that she benefits from. The story actually ends without giving all the  answers. Here I let viewer to decide. It is their imagination and interpretation that is important.
+
+To create the story I prepared a storyboard, a narrative curve and character sheets. All that elements I preset in the project document.
+</p>       
+</div>
+<div class="button2content">
+<p>The design of the animation is inspired by the style of Lisa Vertudaches. I started my work by on-line research to find some information and works of the artist. Based on that I designed two characters, which I draw later on using Adobe Illustrator. Furthermore, I created an image of the background and an image of the sprite. Apart from that I created a stile tile and a storyboard of the animation. All of that elements you can find in the project document.  
+    
+</p> 
+<div class="scroll">
+scroll down to see the images &#9660;		
+    </div>
+<div class="images">    
+<img src="Images/spring_soup_characters.jpg"> <br>
+
+<img src="Images/baba_chodzi2.png"> <br>
+<img src="Images/animation%20background%20plus.jpg" alt="bauhaus responsive web">  
+   
+</div>
+</div> 
+<div class="button3content">
+<p>
+Using HTML5 and CSS I created a simple sprite of walking grandmother
+</p>       
+</div> 
+    
+<div class="button4content">
+<p>
+</p>       
+</div>     
+</main>
+<footer>
+© Marta Netza Design 2018
+</footer>
+<script>
+    var button1 = document.querySelector("#button1 ");
+    var button2 = document.querySelector("#button2 ");
+    var button3 = document.querySelector("#button3 ");
+    var ComActive = false;
+    var VisActive = false;
+    var IntActive = false;
+
+    button1.addEventListener("click", CommunicationActive);
+
+    function CommunicationActive() {
+
+        if (ComActive == false) {
+
+            document.querySelector(".box-area3").style.textDecoration = "underline";
+            document.querySelector(".box-area4").style.textDecoration = "none";
+            document.querySelector(".box-area5").style.textDecoration = "none";
+
+
+            document.querySelector(".button1content").style.display = "block";
+            document.querySelector(".button2content").style.display = "none";
+            document.querySelector(".button3content").style.display = "none";
+
+
+            
+            IntActive = false;
+            VisActive = false;
+            ComActive = true;
+        } else {
+
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".button1content").style.display = "none";
+//            document.querySelector(".button2content").style.display = "none";
+            ComActive = false;
+        }
+    }
+
+
+    button2.addEventListener("click", VisualisationActive);
+
+    function VisualisationActive() {
+
+        if (VisActive == false) {
+            document.querySelector(".box-area4").style.textDecoration = "underline";
+     
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".box-area5").style.textDecoration = "none";
+
+            document.querySelector(".button1content").style.display = "none";
+            document.querySelector(".button2content").style.display = "block";
+            document.querySelector(".button3content").style.display = "none";
+
+
+            VisActive = true;
+            ComActive = false;
+            IntActive = false;
+
+
+
+        } else {
+           document.querySelector(".box-area4").style.textDecoration = "none";
+            
+            document.querySelector(".button2content").style.display = "none";
+
+            VisActive = false;
+        }
+
+
+
+    }
+
+    
+    button3.addEventListener("click", InteractionActive);
+
+    function InteractionActive() {
+
+        if (IntActive == false) {
+            document.querySelector(".box-area5").style.textDecoration = "underline";
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".box-area4").style.textDecoration = "none"; document.querySelector(".button1content").style.display = "none";
+            document.querySelector(".button2content").style.display = "none";
+            document.querySelector(".button3content").style.display = "block";
+
+            IntActive = true;
+            VisActive = false;
+            ComActive = false;
+
+
+        } else {
+           document.querySelector(".box-area5").style.textDecoration = "none";
+            document.querySelector(".button3content").style.display = "none";
+
+            IntActive = false;
+        }
+
+
+
+    }
+
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

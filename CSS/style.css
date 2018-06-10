@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+*{
+    font-family: "Lato";
+}
+p{
+    color: #575756;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#preload_image1{
+    width: 0px;
+    height: 0px;
+    display: inline;
+    background-image: url(../Images/animation%20background%20plus0_small_blured.jpg);
+}
+#preload_image2{
+    width: 0px;
+    height: 0px;
+    display: inline;
+      background-image: url(../Images/26310small_blured.jpg);
+}
+#preload_image3{
+    width: 0px;
+    height: 0px;
+    display: inline;
+  background-image: url(../Images/Exmouth-View-Hotel_1066x742small_blured.jpg);
+}
+#preload_image4{
+    width: 0px;
+    height: 0px;
+    display: inline;
+   background-image: url(../Images/waiting-room_small_blured.png);
+}
+#preload_image5{
+    width: 0px;
+    height: 0px;
+    display: inline;
+    background-image:url(../Images/bauhaus_logo_ludzik_popr-z_tlemsmall_blured.png);
+}
+#preload_image6{
+    width: 0px;
+    height: 0px;
+    display: inline;
+    background-image: url(../Images/trump_small_blured.png);
+}
+
+#preload_image7{
+    width: 0px;
+    height: 0px;
+    display: inline;
+   background-image: url(../Images/We-bike_small_blured.png);
+}
+#preload_image8{
+    width: 0px;
+    height: 0px;
+    display: inline;
+     background-image: url(../Images/burger_small_blured.png);
+}
+#preload_image9{
+    width: 0px;
+    height: 0px;
+    display: inline;
+      background-image: url(../Images/Young-people-using-smartphones-and-tablets_small_blured.jpg);
+}
+
+
+
+
+.wrapper-header {
+    position: sticky;
+    top:0;
+    background-color: white;
+    max-width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "area1 area2";
+    color: #0076D3;
+    font-size: 1.4em;
+    font-family: Lato;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header-area1 {
+    grid-area: area1;
+}
+
+.header-area2 {
+    grid-area: area2;
+    text-align: right;
+}
+a{
+    margin-left: 50px;
+}
+
+.header-area1 a{
+ margin-left: 0px;    
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: #0076D3;
+    font-size: 1em;   
+}
+a:hover{
+    background-color: #0076D3;
+    color: white;
+}
+
+/*----------------index page large------------------*/
+
+.wrapper-index {
+
+    max-width: 70%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "area1 area2";
+}
+
+.wrapper-index img{
+    display: block;
+    max-width: 70%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+
+
+.index-area1{
+    grid-area: area1;
+    
+}
+
+.index-area2{
+    grid-area: area2;
+    font-size: 1.2em;
+    margin-top: 50%
+}
+
+.index-area2 a{
+    display: block;
+    margin-right: 0px;
+    margin-left: auto;
+    text-align: right;
+}
+
+.index-area2 span{
+    color: black;
+    text-decoration: underline;
+}
+
+/*-----------------portfolio page large--------------*/
+.wrapper-main {
+
+    max-width: 70%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "area1 area2 area3"
+        "area4 area5 area6"
+        "area7 area8 area9";
+}
+
+.wrapper-main a:link,
+.wrapper-main a:visited{
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    margin-left: 0px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.wrapper-main a:hover{
+    text-decoration:  none;
+
+    background-color: transparent;
+    color: white;
+}
+.main-area1 {
+    grid-area: area1;
+    background-image: url(../Images/26310small.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 5px;
+    transition: background-image 0.5s;
+   
+
+}
+
+.main-area1:hover {
+ 
+    background-image: url(../Images/26310small_blured.jpg);
+
+    -webkit-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    -moz-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    
+}
+
+
+
+
+.main-area2 {
+    grid-area: area2;
+    background-image: url(../Images/Exmouth-View-Hotel_1066x742small.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 5px;
+    transition: background-image 0.5s;
+  
+
+}
+
+.main-area2:hover{
+     background-image: url(../Images/Exmouth-View-Hotel_1066x742small_blured.jpg);
+    -webkit-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    -moz-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+}
+
+
+.main-area3 {
+    grid-area: area3;
+    background-image: url(../Images/waiting-room_small.png);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 5px;
+    border: 1px solid;
+    border-color: lightgray;
+     transition: background-image 0.5s;
+    
+}
+
+.main-area3:hover{
+    background-image: url(../Images/waiting-room_small_blured.png);
+    -webkit-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    -moz-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+}
+
+.main-area4 {
+    grid-area: area4;
+    height: 200px;
+    margin: 5px;
+    background-image: url(../Images/bauhaus_logo_ludzik_popr-z_tlemsmall.png);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 5px;
+     transition: background-image 0.5s;
+  
+    
+}
+
+.main-area4:hover{
+    background-image: url(../Images/bauhaus_logo_ludzik_popr-z_tlemsmall_blured.png);
+    -webkit-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    -moz-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+}
+
+.main-area5 {
+   grid-area: area5;
+    background-image: url(../Images/trump_small.png);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 5px;
+     transition: background-image 0.5s;
+
+    
+}
+
+.main-area5:hover{
+       background-image: url(../Images/trump_small_blured.png);
+    -webkit-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    -moz-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+}
+
+.main-area6 {
+    grid-area: area6;
+    background-image: url(../Images/We-bike_small.png);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 5px;
+     transition: background-image 0.5s;
+
+}
+
+.main-area6:hover{
+    background-image: url(../Images/We-bike_small_blured.png);
+    -webkit-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    -moz-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    
+}
+
+.main-area7 {
+    grid-area: area7;
+    background-image: url(../Images/animation%20background%20plus0_small.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 5px;
+    transition: background-image 0.5s;
+    
+}
+.main-area7:hover{
+      background-image: url(../Images/animation%20background%20plus0_small_blured.jpg);
+    -webkit-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    -moz-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+}
+
+.main-area8 {
+     grid-area: area8;
+    background-image: url(../Images/burger_small.png);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 5px;
+    border: 1px solid;
+    border-color: gray;
+     transition: background-image 0.5s;
+
+}
+.main-area8:hover{
+        background-image: url(../Images/burger_small_blured.png);
+    -webkit-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    -moz-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+}
+
+.main-area9 {
+    grid-area: area9;
+    background-image: url(../Images/Young-people-using-smartphones-and-tablets_small.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin: 5px;
+     transition: background-image 0.5s;
+
+}
+
+.main-area9:hover{
+    background-image: url(../Images/Young-people-using-smartphones-and-tablets_small_blured.jpg);
+    -webkit-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    -moz-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+}
+.text_box1, .text_box2, .text_box3, .text_box4, .text_box5, .text_box6, .text_box7, .text_box8, .text_box9{
+    font-family: "Lato";
+    padding:10%;
+    color: white;
+    text-align: center;
+    display:none;
+}
+
+
+span{
+    color: #0076D3;
+}
+
+.text_box1 h1, .text_box2 h1, .text_box3 h1, .text_box4 h1, .text_box5 h1, .text_box6 h1, .text_box7 h1, .text_box8 h1, .text_box9 h1 {
+    font-size: 1.2em;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    text-align: left;
+}
+
+footer{
+display: block;
+ color: #0076D3;
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ text-align: center;
+ background-color: white;
+
+}
+
+.wrapper-main p{
+    color: white;
+}
+
+/*-------------------box large---------------*/
+
+.button2content img{
+    max-width: 100%
+}
+
+.scroll {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #0076D3;
+}
+.images{
+    text-align: left;
+    font-size: 1.2em;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #0076D3;
+}
+.box7 .images img {
+    display: block;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+.wrapper-box {
+
+    max-width: 70%;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  auto 1fr auto;
+    grid-template-areas: 
+        "area1 area1 area2 area2"
+        "area3 area4 area5 area6"
+        "area7 area7 area7 area7";
+}
+
+
+
+.box-area1{
+    grid-area: area1;
+    margin-bottom: 100px;
+    line-height: 1.5;
+
+}
+
+.box-area2{
+    grid-area: area2;
+    margin-left: 50px;
+    text-align: right;
+}
+
+.box-area2 img {
+    margin-top: 30px;
+    max-width: 400px;
+    -webkit-box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    -moz-box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    
+}
+
+.box-area2 p{
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+
+.box-area2 h2{
+    margin-top: 0px
+}
+
+.box-area3{
+    grid-area: area3;
+    background-color: #0076D3;
+    max-height: 20px;
+    margin: 10px;
+    margin-left: 0px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    
+    
+}
+
+
+.box-area3:hover{
+    background-color: white;
+    color: #0076D3;
+    border: 1px solid;
+    border-bottom-color:#0076D3 
+}
+
+.box-area4{
+    grid-area: area4;
+    background-color: #0076D3;
+    max-height: 20px;
+    margin: 10px;
+    margin-left: 0px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+
+    
+}
+
+.box-area4:hover{
+    background-color: white;
+    color: #0076D3;
+    border: 1px solid;
+    border-bottom-color:#0076D3 
+}
+
+.box-area5{
+    grid-area: area5;
+    background-color: #0076D3;
+    max-height: 20px;
+    margin: 10px;
+    margin-left: 0px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.box-area5:hover{
+    background-color: white;
+    color: #0076D3;
+    border: 1px solid;
+    border-bottom-color:#0076D3 
+}
+
+.box-area6{
+    grid-area: area6;
+    background-color: #0076D3;
+    max-height: 20px;
+    margin: 10px;
+    margin-left: 0px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+}
+.box-area6:hover{
+    background-color: white;
+    color: #0076D3;
+    border: 1px solid;
+    border-bottom-color:#0076D3 
+}
+
+.box-area2 img{
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    
+}
+.button1content, .button2content, .button3content, .button4content{
+    grid-area: area7;
+    line-height:1.5;
+
+}
+
+.button1content{
+    display: none;
+}
+
+.button2content{
+    display: none;
+}
+
+.button3content{
+    display: none
+}
+
+.button4content{
+    display: none
+}
+
+.bauhaus .box-area6{
+    display: none;
+}
+
+.box3 .box-area6{
+    display: none;
+}
+.box3 .box-area5{
+    display: none;
+}
+
+.box4 .box-area6{
+    display: none;
+}
+.box4 .box-area5{
+    display: none;
+}
+
+.box4 .box-area4{
+    display: none;
+}
+
+.box5 .box-area6{
+    display: none;
+}
+.box5 .box-area5{
+    display: none;
+}
+
+.box5 .box-area4{
+    display: none;
+}
+
+.box6 .box-area6{
+    display: none;
+}
+.box6 .box-area5{
+    display: none;
+}
+
+.box7 .box-area6{
+    display: none;
+}
+
+.box8 .box-area6{
+    display: none;
+}
+
+.box8 .box-area5{
+    display: none;
+}
+.box8 .box-area4{
+    display: none;
+}
+
+.box8 .box-area3{
+    display: none;
+}
+
+/*---------------about page large------------*/
+
+
+.wrapper-about {
+    max-width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "area1 area2";
+    font-size: 1em;
+    font-family: Lato;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-area1 {
+    grid-area: area1;
+    line-height: 1.5;
+}
+
+.about-area2 {
+    grid-area: area2;
+}
+.about-area2 img{
+    border-radius: 200px;
+    display: block;
+    max-width: 200px;
+    margin-top: 30px;
+    margin-left: auto;
+    -webkit-box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    -moz-box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    
+}
+
+.about-area1 p{
+    margin-bottom: 10px;
+}
+
+/*---------------tablet---------------------*/
+@media all and (max-width:824px) {
+
+    
+.wrapper-header {
+    position:relative;
+    top:0;
+    background-color: white;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "area1 area2";
+    color: #0076D3;
+    font-size: 1em;
+    font-family: Lato;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+.header-area1 {
+    grid-area: area1;
+    text-align: left;
+
+}
+
+.header-area2 {
+    grid-area: area2;
+    text-align: right;
+}  
+    
+.wrapper-index {
+
+    max-width: 70%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+        "area1" "area2";
+}
+
+.wrapper-index img{
+    display: block;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+}
+
+
+
+.index-area1{
+    grid-area: area1;
+    
+}
+
+.index-area2{
+    grid-area: area2;
+    font-size: 1.2em;
+    margin-top: 0px;
+}
+
+.wrapper-main {
+
+    max-width: 80%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "area1 area2"
+        "area3 area4"
+        "area5 area6" 
+        "area7 area8" 
+        "area9 .";
+}
+    
+    
+.wrapper-box {
+
+    max-width: 100%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  200px 400px 50px 50px 50px 50px auto;
+    grid-template-areas: 
+        "area1"
+        "area2" 
+        "area3"
+        "area4" 
+        "area5" 
+        "area6"
+        "area7" ;
+} 
+  
+
+.box-area2{
+    grid-area: area2;
+    margin-left: 0px;
+    text-align: left;
+}
+
+.box-area2 img{
+    margin-top: 0px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    -webkit-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    -moz-box-shadow: 3px 2px 25px 0px rgba(169, 168, 179, 1);
+    box-shadow:3px 2px 25px 0px rgba(169, 168, 179, 1);
+    
+}
+    .box-area2 a{
+        margin-left: 0px;
+    }    
+}
+
+.wrapper-about {
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "area2" "area1" ;
+    font-size: 1em;
+    font-family: Lato;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    
+.about-area2 img{
+    border-radius: 200px;
+    display: block;
+    max-width: 200px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    -moz-box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    
+}
+
+/*-------------------mobile-------------------*/
+
+
+@media all and (max-width:416px) {
+
+.wrapper-main {
+
+    max-width: 80%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "area1"
+        "area2" 
+        "area3"
+        "area4" 
+        "area5" 
+        "area6"
+        "area7" 
+        "area8" 
+        "area9";
+}
+    
+    
+.wrapper-box {
+
+    max-width: 90%;
+    max-height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  300px 400px 50px 50px 50px 50px 1fr;
+    grid-template-areas: 
+        "area1"
+        "area2" 
+        "area3"
+        "area4" 
+        "area5" 
+        "area6"
+        "area7" ;
+} 
+    
+    
+.box2 .wrapper-box {
+
+    max-width: 100%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  400px 400px 50px 50px 50px 50px 1fr;
+    grid-template-areas: 
+        "area1"
+        "area2" 
+        "area3"
+        "area4" 
+        "area5" 
+        "area6"
+        "area7" ;
+} 
+    
+    
+.wrapper-about {
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "area2" "area1" ;
+    font-size: 1em;
+    font-family: Lato;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    
+.about-area2 img{
+    border-radius: 200px;
+    display: block;
+    max-width: 200px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    -moz-box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    box-shadow: 1px 3px 28px 1px rgba(135, 136, 143, 1);
+    
+}

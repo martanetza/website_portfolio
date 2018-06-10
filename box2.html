@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+<header class="wrapper-header">
+<div class="header-area1">
+<a href="index.html">Marta Netza</a>
+    
+</div>    
+<div class="header-area2">
+<a href="portfolio.html">Portfolio</a>    
+<a href="about.html">About</a>
+
+</div>
+</header>
+<div class="box2">    
+<main class="wrapper-box">
+<div class="box-area1">
+<h1>Exmouth View Hotel</h1>    
+<p>Together with my group we created a new website of Exmouth View Hotel. The old website of the hotel needed to be redesigned, because it was old fashion, messy, overloaded with information and hard to navigate. Following the principals of design, we created a new website that is better organized, more user friendly and looks more modern. As working on the assignment I was mostly focused on coding. However, I also took part in conceptual work, where we were planning, what the website should look like, so I have learned a lot about communication and design as well.
+</p>    
+</div>
+<div class="box-area2">
+<img src="Images/Exmouth-View-Hotel_1066x742small.jpg" alt="hotel">
+<p>Theme:</p>
+<h2>BASIC WEB</h2>
+<a href="http://www.martanetza.com/kea/01-web/basic-redesign/index.html" >see the project  &#x279C; </a>
+</div>
+    <div id=button1 class="box-area3">Interaction Design</div>
+   
+<div class="button1content">
+<p>I coded the website using HTML5, CSS and Grid Layout Module. The biggest challenge for me in that case was to react quickly to groups decisions on website layout. In fact we changed a lot in the concept of layout short before the deadline, so I had little time to recode the website again. It was a little bit stressful but I am not complaining. I am really happy about that experience. I have learned that it is better to have a code well and logically structured, so that all the changes can be easily and quickly applied. I guess everyone expect coders to be fast, so I hope I can be better organized and more efficient in future.
+</p>       
+</div>
+   
+</main>
+<footer>
+© Marta Netza Design 2018
+</footer>
+<script>
+    var button1 = document.querySelector("#button1 ");
+    var button2 = document.querySelector("#button2 ");
+    var button3 = document.querySelector("#button3 ");
+    var But1Active = false;
+  
+
+    button1.addEventListener("click", Button1Active);
+
+    function Button1Active() {
+
+        if (But1Active == false) {
+
+            document.querySelector(".box-area3").style.textDecoration = "underline";
+           
+
+
+            document.querySelector(".button1content").style.display = "block";
+           
+
+        
+            But1Active = true;
+        } else {
+
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".button1content").style.display = "none";
+//            document.querySelector(".button2content").style.display = "none";
+            But1Active = false;
+        }
+    }
+
+
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

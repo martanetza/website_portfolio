@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+<header class="wrapper-header">
+<div class="header-area1">
+<a href="index.html">Marta Netza</a>
+    
+</div>    
+<div class="header-area2">
+<a href="portfolio.html">Portfolio</a>    
+<a href="about.html">About</a>
+
+</div>
+</header>
+<div class="box6">    
+<main class="wrapper-box">
+<div class="box-area1">
+<h1>We Bike</h1>    
+<p>Movie is as a result of a group work. Based on current materials of “I bike Copenhagen” we created a short campaign video that promotes cycling around Copenhagen and gives some tips on how to bike safely. The movie is a specially dedicated to newcomers, who feel a bit lost and are afraid of cycling in the city. Our idea was to make them less worried and encourage them to join the community of cyclist.  
+</p>    
+</div>
+<div class="box-area2">
+<img src="Images/We-bike_small.png" alt="bauhaus">
+<p>Theme:</p>
+<h2>BASIC CONTENT</h2>
+<a href="http://www.martanetza.com/kea/We_bike/index.html" >see the project  &#x279C; </a>
+</div>
+    <div id=button1 class="box-area3">Communication</div>
+    <div id=button2 class="box-area4">Visualisation</div>
+    <div id=button3 class="box-area5">Interaction Design</div>
+    <div id=button4 class="box-area6">Interaction</div> 
+<div class="button1content">
+<p>In the movie we present interviews with people living in Copenhagen who use bikes as their main form of transportation. To bring the message across the target audience we used ethos rhetoric, which turned out to be a good way of communication in this case. The movie seems to be credible and convincing. Used rhetorical arguments should motivate newcomers to bike in the city.  
+</p>       
+</div>
+<div class="button2content">
+<p>Following created by the group storyboard I participated in taking shots. I was focus on filming bikes and the city environment, while the rest of the group was working on interviews. I also took part in the post-production, mostly by helping with selecting of the suitable shots and arranging them together. 
+</p>       
+</div> 
+<div class="button3content">
+<p>The website is created by using HTML5 and CSS. It is responsive, which in this case means that it is compatible with large, medium and small devices. While designing the website I was using the CSS Grid Layout Module, that turned out to be a very practical and useful tool. The Grid Layout allowed me to change positions of the content easily, so that it could be quickly adjust to different devices. Although Grid Layout worked fine for me in that case, I still had some issues with sizes of items displayed in the website. I would like to improve that if future.
+</p>       
+</div> 
+    
+<div class="button4content">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>       
+</div>     
+</main>
+<footer>
+© Marta Netza Design 2018
+</footer>
+<script>
+    var button1 = document.querySelector("#button1 ");
+    var button2 = document.querySelector("#button2 ");
+    var button3 = document.querySelector("#button3 ");
+    var ComActive = false;
+    var VisActive = false;
+    var IntActive = false;
+
+    button1.addEventListener("click", CommunicationActive);
+
+    function CommunicationActive() {
+
+        if (ComActive == false) {
+
+            document.querySelector(".box-area3").style.textDecoration = "underline";
+            document.querySelector(".box-area4").style.textDecoration = "none";
+            document.querySelector(".box-area5").style.textDecoration = "none";
+
+
+            document.querySelector(".button1content").style.display = "block";
+            document.querySelector(".button2content").style.display = "none";
+            document.querySelector(".button3content").style.display = "none";
+
+
+            
+            IntActive = false;
+            VisActive = false;
+            ComActive = true;
+        } else {
+
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".button1content").style.display = "none";
+//            document.querySelector(".button2content").style.display = "none";
+            ComActive = false;
+        }
+    }
+
+
+    button2.addEventListener("click", VisualisationActive);
+
+    function VisualisationActive() {
+
+        if (VisActive == false) {
+            document.querySelector(".box-area4").style.textDecoration = "underline";
+     
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".box-area5").style.textDecoration = "none";
+
+            document.querySelector(".button1content").style.display = "none";
+            document.querySelector(".button2content").style.display = "block";
+            document.querySelector(".button3content").style.display = "none";
+
+
+            VisActive = true;
+            ComActive = false;
+            IntActive = false;
+
+
+
+        } else {
+           document.querySelector(".box-area4").style.textDecoration = "none";
+            
+            document.querySelector(".button2content").style.display = "none";
+
+            VisActive = false;
+        }
+
+
+
+    }
+
+    
+    button3.addEventListener("click", InteractionActive);
+
+    function InteractionActive() {
+
+        if (IntActive == false) {
+            document.querySelector(".box-area5").style.textDecoration = "underline";
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".box-area4").style.textDecoration = "none"; document.querySelector(".button1content").style.display = "none";
+            document.querySelector(".button2content").style.display = "none";
+            document.querySelector(".button3content").style.display = "block";
+
+            IntActive = true;
+            VisActive = false;
+            ComActive = false;
+
+
+        } else {
+           document.querySelector(".box-area5").style.textDecoration = "none";
+            document.querySelector(".button3content").style.display = "none";
+
+            IntActive = false;
+        }
+
+
+
+    }
+
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

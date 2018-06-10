@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+<header class="wrapper-header">
+<div class="header-area1">
+<a href="index.html">Marta Netza</a>
+    
+</div>    
+<div class="header-area2">
+<a href="portfolio.html">Portfolio</a>    
+<a href="about.html">About</a>
+
+</div>
+</header>
+<div class="box9">    
+<main class="wrapper-box">
+<div class="box-area1">
+<h1>LoopIn App</h1>    
+<p>It was a group project of launching a mobile platform that facilitates discovery, communication and cooperation between students at KEA. Our idea was to provide students with a tool that can be helpful with creating new projects and finding team members or joining an already existing projects. By launching an app we wanted to build a community of students that cooperate, inspire and support each other.  
+
+</p>    
+</div>
+<div class="box-area2">
+<img src="Images/Young-people-using-smartphones-and-tablets_small.jpg" alt="bauhaus">
+<p>Theme:</p>
+<h2>BASIC WEB</h2>
+<a href="http://www.martanetza.com/kea/loopin/index.html" >see the project  &#x279C; </a>
+</div>
+    <div id=button1 class="box-area3">Communication</div>
+    <div id=button2 class="box-area4">Visualisation</div>
+    <div id=button3 class="box-area5">Interaction Design</div>
+    <div id=button4 class="box-area6">Business</div> 
+<div class="button1content">
+<p>I participated in creating the prototype of the application. Together with the group we prepared an idea of the application. Our target audience in that case was students of KEA. The first survey among students showed, that they are mostly focused on career development and would like to cooperate with each other. To meet their expectations we decided to create an useful tool that can boost their professional development. After user test on our first prototype we limited the idea to one specific function that was finding members and organizing student group projects. In the end I created prototype in UX.
+</p>       
+    </div>
+<div class="button2content">
+<p>Based on group ideas and sketches I created the prototype of the application and the prototype of promoting website.  
+
+</p> 
+<div class="scroll">
+scroll down to see the images &#9660;		
+    </div>
+<div class="images">    
+<img src="Images/WWW-Showcase-Project-Presentation_2.png" alt="loopin app responsive web">
+<img src="Images/Sprite_maly4.png" alt="loopin app responsive web">
+
+
+</div>
+</div>
+<div class="button3content">
+<p>I coded the website promoting LoopIn App. I used HTML, CSS and JawaScript 
+</p>       
+</div> 
+    
+<div class="button4content">
+<p>In order to sell our product we had to answer a range of important questions, including for example: why we created the application? What is the problem area that we are going to approach? Who is our target audience?  How the application will solve the problems of our potential users? 
+Next step was to confront our ideas with the potential target audience. We did that by conducting face to face interviews with KEA students as well as on-line survey, which helped us to develop the concept of the application. 
+Furthermore, we described mission, vision and values of our company. We also developed company's strategy by creating Business Model Canvas, that helped us to described problem areas such as: partners, revenue stream, cost structure, customers, resources, communication channels and values. 
+Finally, we developed communication plan with our target audience, in which we included our purpose and expected effects as well as communication environment and media elements. 
+</p>       
+</div>     
+</main>
+<footer>
+© Marta Netza Design 2018
+</footer>
+<script>
+    var button1 = document.querySelector("#button1 ");
+    var button2 = document.querySelector("#button2 ");
+    var button3 = document.querySelector("#button3 ");
+    var ComActive = false;
+    var VisActive = false;
+    var IntActive = false;
+    var BisActive = false;
+
+    button1.addEventListener("click", CommunicationActive);
+
+    function CommunicationActive() {
+
+        if (ComActive == false) {
+
+            document.querySelector(".box-area3").style.textDecoration = "underline";
+            document.querySelector(".box-area4").style.textDecoration = "none";
+            document.querySelector(".box-area5").style.textDecoration = "none";
+            document.querySelector(".box-area6").style.textDecoration = "none";
+
+
+            document.querySelector(".button1content").style.display = "block";
+            document.querySelector(".button2content").style.display = "none";
+            document.querySelector(".button3content").style.display = "none";
+             document.querySelector(".button4content").style.display = "none";
+            
+
+
+            BisActive = false;
+            IntActive = false;
+            VisActive = false;
+            ComActive = true;
+        } else {
+
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".button1content").style.display = "none";
+//            document.querySelector(".button2content").style.display = "none";
+            ComActive = false;
+        }
+    }
+
+
+    button2.addEventListener("click", VisualisationActive);
+
+    function VisualisationActive() {
+
+        if (VisActive == false) {
+            document.querySelector(".box-area4").style.textDecoration = "underline";
+     
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".box-area5").style.textDecoration = "none";
+            document.querySelector(".box-area6").style.textDecoration = "none";
+
+            document.querySelector(".button1content").style.display = "none";
+            document.querySelector(".button2content").style.display = "block";
+            document.querySelector(".button3content").style.display = "none";
+            document.querySelector(".button4content").style.display = "none";
+
+
+            VisActive = true;
+            ComActive = false;
+            IntActive = false;
+            BisActive = false;
+
+
+        } else {
+           document.querySelector(".box-area4").style.textDecoration = "none";
+            
+           document.querySelector(".button2content").style.display = "none";
+
+            VisActive = false;
+        }
+
+
+
+    }
+
+    
+    button3.addEventListener("click", InteractionActive);
+
+    function InteractionActive() {
+
+        if (IntActive == false) {
+            document.querySelector(".box-area5").style.textDecoration = "underline";
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".box-area4").style.textDecoration = "none"; 
+             document.querySelector(".box-area6").style.textDecoration = "none";
+            document.querySelector(".button1content").style.display = "none";
+            document.querySelector(".button2content").style.display = "none";
+            document.querySelector(".button3content").style.display = "block";
+            document.querySelector(".button4content").style.display = "none";
+
+            IntActive = true;
+            VisActive = false;
+            ComActive = false;
+            BisActive = false;
+
+
+        } else {
+           document.querySelector(".box-area5").style.textDecoration = "none";
+            document.querySelector(".button3content").style.display = "none";
+
+            IntActive = false;
+        }
+
+
+
+    }
+    
+    button4.addEventListener("click", BusinessActive);
+
+    function BusinessActive() {
+
+        if (BisActive == false) {
+             document.querySelector(".box-area6").style.textDecoration = "underline";
+            document.querySelector(".box-area5").style.textDecoration = "none";
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".box-area4").style.textDecoration = "none"; 
+            document.querySelector(".button1content").style.display = "none";
+            document.querySelector(".button2content").style.display = "none";
+            document.querySelector(".button3content").style.display = "none";
+             document.querySelector(".button4content").style.display = "block";
+
+            IntActive = false;
+            VisActive = false;
+            ComActive = false;
+            BisActive = true;
+
+        } else {
+           document.querySelector(".box-area6").style.textDecoration = "none";
+            document.querySelector(".button4content").style.display = "none";
+
+            BisActive = false;
+        }
+
+
+
+    }
+
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+

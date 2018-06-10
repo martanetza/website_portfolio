@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+<header class="wrapper-header">
+<div class="header-area1">
+<a href="index.html">Marta Netza</a>
+    
+</div>    
+<div class="header-area2">
+<a href="portfolio.html">Portfolio</a>    
+<a href="about.html">About</a>
+
+</div>
+</header>
+<div class="box5">    
+<main class="wrapper-box">
+<div class="box-area1">
+<h1>Tour de Trump</h1>    
+<p>That was a group project. We created a short interactive animation that shows Donald Trump during his presidential campaign. The animation is inspired by The Straight Story made by David Lynch. Moreover, the design follows the rules of pop art style. My role in the project was mostly coding. 
+</p>    
+</div>
+<div class="box-area2">
+<img src="Images/trump_small.png" alt="bauhaus">
+<p>Theme:</p>
+<h2>BASIC ANIMATION</h2>
+<a href="http://www.martanetza.com/kea/tour_de_trump/index.html" >see the project  &#x279C; </a>
+</div>
+    <div id=button1 class="box-area3">Interaction design</div>
+    <div id=button2 class="box-area4"></div>
+    <div id=button3 class="box-area5"> Design</div>
+    <div id=button4 class="box-area6"></div> 
+<div class="button1content">
+<p>I was working on the code together with another team member. Based on sequence diagram we created a code for the interactive animation. We were using mostly JavaScript and CSS. While working on the code I improved my skills of using CSS animations and transitions, as well as JavaScript events. I have learned how to control style using JavaScript. It was also challenging to work in two on one code. We had to learn how to coordinate the coding, so that our work could be more efficient and go smoothly. 
+</p>       
+</div>
+<div class="button2content">
+<p>
+</p>       
+</div> 
+<div class="button3content">
+<p>
+</p>       
+</div> 
+    
+<div class="button4content">
+<p>
+</p>       
+</div>     
+</main>
+<footer>
+© Marta Netza Design 2018
+</footer>
+<script>
+    var button1 = document.querySelector("#button1 ");
+    var button2 = document.querySelector("#button2 ");
+    var button3 = document.querySelector("#button3 ");
+    var ComActive = false;
+    var VisActive = false;
+    var IntActive = false;
+
+    button1.addEventListener("click", CommunicationActive);
+
+    function CommunicationActive() {
+
+        if (ComActive == false) {
+
+            document.querySelector(".box-area3").style.textDecoration = "underline";
+            document.querySelector(".box-area4").style.textDecoration = "none";
+            document.querySelector(".box-area5").style.textDecoration = "none";
+
+
+            document.querySelector(".button1content").style.display = "block";
+            document.querySelector(".button2content").style.display = "none";
+            document.querySelector(".button3content").style.display = "none";
+
+
+            
+            IntActive = false;
+            VisActive = false;
+            ComActive = true;
+        } else {
+
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".button1content").style.display = "none";
+//            document.querySelector(".button2content").style.display = "none";
+            ComActive = false;
+        }
+    }
+
+
+    button2.addEventListener("click", VisualisationActive);
+
+    function VisualisationActive() {
+
+        if (VisActive == false) {
+            document.querySelector(".box-area4").style.textDecoration = "underline";
+     
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".box-area5").style.textDecoration = "none";
+
+            document.querySelector(".button1content").style.display = "none";
+            document.querySelector(".button2content").style.display = "block";
+            document.querySelector(".button3content").style.display = "none";
+
+
+            VisActive = true;
+            ComActive = false;
+            IntActive = false;
+
+
+
+        } else {
+           document.querySelector(".box-area4").style.textDecoration = "none";
+            
+            document.querySelector(".button2content").style.display = "none";
+
+            VisActive = false;
+        }
+
+
+
+    }
+
+    
+    button3.addEventListener("click", InteractionActive);
+
+    function InteractionActive() {
+
+        if (IntActive == false) {
+            document.querySelector(".box-area5").style.textDecoration = "underline";
+            document.querySelector(".box-area3").style.textDecoration = "none";
+            document.querySelector(".box-area4").style.textDecoration = "none"; document.querySelector(".button1content").style.display = "none";
+            document.querySelector(".button2content").style.display = "none";
+            document.querySelector(".button3content").style.display = "block";
+
+            IntActive = true;
+            VisActive = false;
+            ComActive = false;
+
+
+        } else {
+           document.querySelector(".box-area5").style.textDecoration = "none";
+            document.querySelector(".button3content").style.display = "none";
+
+            IntActive = false;
+        }
+
+
+
+    }
+
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
